@@ -1,5 +1,5 @@
 require "bp3/hello/engine/version"
-require "bp3/hello/engine/railtie"
+require "bp3/hello/engine/engine"
 
 module Bp3
   module Hello

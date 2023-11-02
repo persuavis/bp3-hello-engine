@@ -1,6 +1,3 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  mount Bp3::Hello::Engine::Engine => "/bp3-hello-engine"
 end
