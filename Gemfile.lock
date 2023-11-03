@@ -2,6 +2,8 @@ PATH
   remote: .
   specs:
     bp3-hello-engine (0.1.0)
+      bp3-hello-world (>= 0.1.1)
+      propshaft
       rails (>= 7.0.4)
 
 GEM
@@ -82,6 +84,7 @@ GEM
       tzinfo (~> 2.0)
     base64 (0.1.1)
     bigdecimal (3.1.4)
+    bp3-hello-world (0.1.1)
     builder (3.2.4)
     concurrent-ruby (1.2.2)
     connection_pool (2.4.1)
@@ -186,10 +189,10 @@ GEM
 
 PLATFORMS
   x86_64-darwin-21
+  x86_64-darwin-22
 
 DEPENDENCIES
   bp3-hello-engine!
-  propshaft
 
 BUNDLED WITH
    2.3.7

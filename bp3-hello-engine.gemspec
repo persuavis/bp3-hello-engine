@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.email       = ["wimdenbraven@persuavis.com"]
   spec.homepage = "https://www.black-phoebe.com"
   spec.summary     = "Bp3::Hello::Engine is an example Bp3 engine plugin"
-  spec.description = "Bp3::Hello::Engine is an example Bp3 engine plugin that says 'hello'"
+  spec.description = "Bp3::Hello::Engine is an example Bp3 engine plugin that 'says hello'"
     spec.license     = "MIT"
   
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the "allowed_push_host"
@@ -23,5 +23,7 @@ Gem::Specification.new do |spec|
   end
 
   spec.add_dependency "rails", ">= 7.0.4"
+  spec.add_dependency "propshaft"
+  spec.add_dependency "bp3-hello-world", ">= 0.1.1"
   spec.metadata["rubygems_mfa_required"] = "true"
 end
