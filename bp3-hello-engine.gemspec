@@ -23,5 +23,12 @@ Gem::Specification.new do |spec|
   spec.add_dependency "rails", ">= 7.0.4"
   spec.add_dependency "propshaft"
   spec.add_dependency "bp3-hello-world", ">= 0.1.3"
+
+  spec.add_development_dependency "rake", "~> 13.0"
+  spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "rubocop", "~> 1.21"
+  spec.add_development_dependency "rubocop-rake", "~> 0.6"
+  spec.add_development_dependency "rubocop-rspec", "~> 2.25"
+
   spec.metadata["rubygems_mfa_required"] = "true"
 end
