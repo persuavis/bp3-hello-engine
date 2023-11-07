@@ -22,6 +22,6 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "rails", ">= 7.0.4"
   spec.add_dependency "propshaft"
-  spec.add_dependency "bp3-hello-world", ">= 0.1.1"
+  spec.add_dependency "bp3-hello-world", ">= 0.1.3"
   spec.metadata["rubygems_mfa_required"] = "true"
 end
