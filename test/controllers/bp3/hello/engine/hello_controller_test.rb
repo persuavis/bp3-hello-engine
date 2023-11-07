@@ -1,17 +1,23 @@
-require "test_helper"
+# frozen_string_literal: true
 
-module Bp3::Hello::Engine
-  class HelloControllerTest < ActionDispatch::IntegrationTest
-    include Engine.routes.url_helpers
+require 'test_helper'
 
-    test "should get world" do
-      get hello_world_url
-      assert_response :success
-    end
+module Bp3
+  module Hello
+    module Engine
+      class HelloControllerTest < ActionDispatch::IntegrationTest
+        include Engine.routes.url_helpers
 
-    test "should get engine" do
-      get hello_engine_url
-      assert_response :success
+        test 'should get world' do
+          get hello_world_url
+          assert_response :success
+        end
+
+        test 'should get engine' do
+          get hello_engine_url
+          assert_response :success
+        end
+      end
     end
   end
 end

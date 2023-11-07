@@ -1,7 +1,13 @@
-require "test_helper"
+# frozen_string_literal: true
 
-class Bp3::Hello::EngineTest < ActiveSupport::TestCase
-  test "it has a version number" do
-    assert Bp3::Hello::Engine::VERSION
+require 'test_helper'
+
+module Bp3
+  module Hello
+    class EngineTest < ActiveSupport::TestCase
+      test 'it has a version number' do
+        assert Bp3::Hello::Engine::VERSION
+      end
+    end
   end
 end
