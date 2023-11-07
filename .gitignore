@@ -2,7 +2,9 @@
 /doc/
 /log/*.log
 /pkg/
-/tmp/
+/spec/dummy/log/*.log
+/spec/dummy/tmp/
 /test/dummy/log/*.log
 /test/dummy/tmp/
-*.gem
+/tmp/
+-*.gem
