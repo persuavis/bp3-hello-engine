@@ -11,7 +11,7 @@ module Bp3::Hello::Engine
     end
 
     def engine
-      @title = 'Hello Engine'
+      @title = I18n.t("hello.engine")
       @message = 'Success!'
     end
 
