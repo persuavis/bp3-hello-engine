@@ -2,7 +2,9 @@
 require 'bp3-hello-world'
 
 module Bp3::Hello::Engine
-  class HelloController < ApplicationController
+  class HelloController < ::ApplicationController
+    layout :engine_layout
+
     def world
       @title = Bp3::Hello::World::Context.say_it!
       @message = 'Success!'
@@ -11,6 +13,12 @@ module Bp3::Hello::Engine
     def engine
       @title = 'Hello Engine'
       @message = 'Success!'
+    end
+
+    private
+
+    def engine_layout
+      'engine_layout'
     end
   end
 end
