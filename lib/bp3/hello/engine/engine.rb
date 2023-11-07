@@ -5,6 +5,12 @@ module Bp3
     module Engine
       class Engine < ::Rails::Engine
         isolate_namespace Bp3::Hello::Engine
+
+        config.generators do |g|
+          g.test_framework :rspec
+          g.assets false
+          g.helper false
+        end
       end
     end
   end
