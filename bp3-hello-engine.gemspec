@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors     = ['Wim den Braven']
   spec.email       = ['wimdenbraven@persuavis.com']
   spec.homepage = 'https://www.black-phoebe.com'
-  spec.summary     = 'Bp3::Hello::Engine is an example Bp3 engine plugin'
-  spec.description = "Bp3::Hello::Engine is an example Bp3 engine plugin that 'says hello'"
+  spec.summary     = 'Bp3::Hello::Engine is an example BP3 Rails engine'
+  spec.description = "Bp3::Hello::Engine is an example BP3 Rails engine that 'says hello'"
   spec.license = 'MIT'
   spec.required_ruby_version = '>= 3.2.2'
 
@@ -23,9 +23,9 @@ Gem::Specification.new do |spec|
     Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
   end
 
-  spec.add_dependency 'bp3-hello-world', '>= 0.1.3'
+  spec.add_dependency 'bp3-hello-world', ['>= 0.1.3', '< 1']
   spec.add_dependency 'propshaft'
-  spec.add_dependency 'rails', '>= 7.0.4'
+  spec.add_dependency 'rails', ['>= 7.1.2', '< 8']
 
   spec.add_development_dependency 'rake', '~> 13.0'
   spec.add_development_dependency 'rspec-rails', '~> 6.0'
